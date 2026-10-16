@@ -4,7 +4,6 @@ import { Code, DeviceMobile, GraduationCap, ShieldCheck, TreeStructure } from '@
 import { about, education } from '../data/profile';
 import Highlighted from './Highlighted';
 import TechLogo from './TechLogo';
-import { experienceStat, rolesStat } from '../utils';
 import Section from './Section';
 
 const logoClass = 'h-6 w-6 drop-shadow-[0_0_6px_rgba(255,255,255,0.35)]';
@@ -101,7 +100,7 @@ function About() {
 
                     <div className="relative flex w-full flex-col justify-between gap-4 xl:gap-5">
                         <div className="grid grid-cols-2 gap-4">
-                            {[experienceStat(), rolesStat()].map((h) => (
+                            {about.highlights.map((h) => (
                                 <div
                                     key={h.label}
                                     className="rounded-2xl bg-white/[0.06] px-5 py-4 ring-1 ring-white/10 backdrop-blur-sm"

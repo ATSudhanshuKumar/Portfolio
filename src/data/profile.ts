@@ -12,15 +12,10 @@ export const profile = {
     "I build **secure, scalable web applications** end to end, from polished **React** interfaces to **Spring Boot** APIs backed by **PostgreSQL**, **MongoDB** and **Redis**.",
   email: "", // TODO: your email for recruiters, e.g. "you@gmail.com" — leave empty to hide email buttons
   phone: "", // optional, e.g. "+91 98765 43210" — leave empty to hide
-  // TODO: link to YOUR resume (e.g. a Google Drive PDF shared as "Anyone with the link").
-  // Resume buttons stay hidden while this is empty. The old link opened "Piyush_Singh.pdf".
-  resumeUrl: "",
   links: {
     github: "https://github.com/ATSudhanshuKumar",
     linkedin: "https://www.linkedin.com/in/sudhanshu-kumar-54b648263/",
   },
-  // Shows "See more on GitHub" under Projects. Turn on once your GitHub has public repos.
-  showGithubLink: false,
 };
 
 export const about = {
@@ -33,7 +28,11 @@ export const about = {
   strengths: ["Clean Code", "Scalable APIs", "Secure Auth", "Responsive UI"],
   // Stack chips shown on the dark card
   stack: ["Java", "Spring Boot", "React", "TypeScript", "PostgreSQL", "MongoDB", "Redis", "Keycloak"],
-  // The two stat tiles (experience, roles held) are calculated from `experience` below.
+  // Quick facts shown as stat cards. Keep them true and specific.
+  highlights: [
+    { value: "1+", label: "Years of experience" },
+    { value: "3+", label: "Projects shipped" },
+  ],
 };
 
 export const skills: { group: string; items: string[] }[] = [
@@ -109,14 +108,23 @@ export const projects: {
   live?: string;
   featured?: boolean;
 }[] = [
-  // TODO: add 2–5 of your best real projects. Make each repo PUBLIC on GitHub
-  // and put its repo URL in `github` (your GitHub currently has 0 public repos).
+  // TODO: add 3–6 of your best projects. Make the repos PUBLIC on GitHub —
+  // your GitHub currently shows 0 public repositories.
   {
     title: "Personal Portfolio",
     description:
       "This site — a responsive, animated portfolio built with React, TypeScript, Tailwind CSS and Framer Motion, with all content driven from a single data file.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/ATSudhanshuKumar",
     featured: true,
+  },
+  {
+    title: "TODO: Project name",
+    description:
+      "TODO: One or two sentences — the problem it solves, what you built, and the outcome.",
+    tech: ["TODO"],
+    github: "",
+    live: "",
   },
 ];
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { DownloadSimple, List, X } from '@phosphor-icons/react';
+import { List, X } from '@phosphor-icons/react';
 import Logo from '../assets/logo.png';
 import { scroll } from '../utils';
 import { profile } from '../data/profile';
@@ -100,19 +100,6 @@ function Navbar() {
                     </motion.ul>
 
                     <div className="flex items-center gap-1">
-                        {profile.resumeUrl && (
-                            <motion.a
-                                href={profile.resumeUrl}
-                                target="_blank"
-                                rel="noreferrer"
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="flex items-center gap-1.5 rounded-2xl bg-[#289EFD] px-3.5 py-2 text-sm font-semibold text-white hover:bg-[#1A8AE6]"
-                            >
-                                <DownloadSimple weight="bold" className="h-4 w-4" />
-                                Resume
-                            </motion.a>
-                        )}
                         <motion.button
                             onClick={() => setOpen((o) => !o)}
                             whileTap={{ scale: 0.85 }}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, Copy, DownloadSimple, EnvelopeSimple, GithubLogo, LinkedinLogo, Phone } from '@phosphor-icons/react';
+import { Check, Copy, EnvelopeSimple, GithubLogo, LinkedinLogo, Phone } from '@phosphor-icons/react';
 import { profile } from '../data/profile';
 
 function Contact() {
@@ -63,17 +63,6 @@ function Contact() {
                             >
                                 <LinkedinLogo weight="fill" className="h-4 w-4" />
                                 Message me on LinkedIn
-                            </a>
-                        )}
-                        {profile.resumeUrl && (
-                            <a
-                                href={profile.resumeUrl}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-                            >
-                                <DownloadSimple weight="bold" className="h-4 w-4" />
-                                Resume
                             </a>
                         )}
                     </div>

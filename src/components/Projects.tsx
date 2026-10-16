@@ -59,20 +59,18 @@ function Projects() {
                 ))}
             </div>
 
-            {profile.showGithubLink && (
-                <div className="mt-10 text-center">
-                    <a
-                        href={profile.links.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-700"
-                    >
-                        <GithubLogo weight="fill" className="h-[18px] w-[18px]" />
-                        See more on GitHub
-                        <ArrowUpRight weight="bold" className="h-4 w-4" />
-                    </a>
-                </div>
-            )}
+            <div className="mt-10 text-center">
+                <a
+                    href={profile.links.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-700"
+                >
+                    <GithubLogo weight="fill" className="h-[18px] w-[18px]" />
+                    See more on GitHub
+                    <ArrowUpRight weight="bold" className="h-4 w-4" />
+                </a>
+            </div>
         </Section>
     );
 }

@@ -2,9 +2,6 @@ import { motion } from 'framer-motion';
 import { Code } from '@phosphor-icons/react';
 import heroImg from '../assets/hero.webp';
 import { profile } from '../data/profile';
-import { experienceStat } from '../utils';
-
-const exp = experienceStat();
 
 function HeroVisual() {
     return (
@@ -71,8 +68,8 @@ function HeroVisual() {
                 }}
                 className="absolute right-0 top-1 rounded-2xl border border-white/70 bg-white/95 px-4 py-3 text-center shadow-xl shadow-slate-900/10 backdrop-blur"
             >
-                <span className="block font-display text-2xl font-extrabold text-ink">{exp.value}</span>
-                <span className="block text-xs font-medium text-slate-500">{exp.label}</span>
+                <span className="block font-display text-2xl font-extrabold text-ink">1+</span>
+                <span className="block text-xs font-medium text-slate-500">Years Experience</span>
             </motion.div>
         </div>
     );
