@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, Copy, EnvelopeSimple, GithubLogo, LinkedinLogo, Phone } from '@phosphor-icons/react';
+import { Check, Copy, DownloadSimple, EnvelopeSimple, GithubLogo, LinkedinLogo, Phone } from '@phosphor-icons/react';
 import { profile } from '../data/profile';
 
 function Contact() {
@@ -65,6 +65,11 @@ function Contact() {
                                 Message me on LinkedIn
                             </a>
                         )}
+                        {/* static button: no link / download for now */}
+                        <span className="inline-flex cursor-default select-none items-center gap-2 rounded-lg border border-white/20 px-4 py-3 text-sm font-semibold text-white">
+                            <DownloadSimple weight="bold" className="h-4 w-4" />
+                            Resume
+                        </span>
                     </div>
 
                     <div className="mx-auto mt-10 grid max-w-2xl gap-3 sm:grid-cols-2">
