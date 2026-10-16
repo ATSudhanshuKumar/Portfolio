@@ -14,7 +14,7 @@ function Skills() {
             title="Technologies I work with"
             subtitle="The languages, frameworks and tools I use to build products end to end."
         >
-            <ul className="flex flex-wrap gap-3 rounded-3xl border border-white/80 bg-white/85 p-6 shadow-sm shadow-slate-900/5 backdrop-blur sm:p-8">
+            <ul className="flex flex-wrap gap-3 rounded-3xl border border-slate-200/70 bg-white p-6 shadow-sm shadow-slate-900/5 sm:p-8">
                 {all.map((name, i) => (
                     <motion.li
                         key={name}

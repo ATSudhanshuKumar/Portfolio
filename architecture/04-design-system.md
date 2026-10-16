@@ -42,8 +42,8 @@ mx-auto max-w-7xl px-4 sm:px-6 lg:px-10        (content width 75rem at lg)
 
 | Surface | Recipe |
 |---|---|
-| Glass card (main card style) | `rounded-3xl border border-white/80 bg-white/85 shadow-sm shadow-slate-900/5 backdrop-blur` |
-| Inner panel (Experience) | `rounded-2xl bg-slate-50/80 ring-1 ring-slate-200/70` |
+| Light card (all light cards: hero floating cards, About tiles, Skills, Experience, Projects) | `border border-slate-200/70 bg-white shadow-sm shadow-slate-900/5` + `rounded-3xl` (large) / `rounded-2xl`–`rounded-xl` (small). **Always solid white**: translucent cards pick up the blue→pink page gradient and stop matching each other. |
+| Inner panel (Experience) | `rounded-2xl bg-slate-50 ring-1 ring-slate-200/70` |
 | Dark feature card (About) | `rounded-3xl bg-[#0a0d14] ring-1 ring-white/10` + blurred glows + top sheen line |
 | Dark CTA (Contact) | `rounded-3xl bg-ink` + blurred brand glow |
 | Chip (Skills, Experience tech) | `rounded-xl` or `rounded-full`, `bg-white ring-1 ring-slate-200`, logo + label |

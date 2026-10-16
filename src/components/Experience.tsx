@@ -4,7 +4,7 @@ import { experience } from '../data/profile';
 import Section from './Section';
 import TechLogo from './TechLogo';
 
-const panel = 'rounded-2xl bg-slate-50/80 p-5 ring-1 ring-slate-200/70';
+const panel = 'rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200/70';
 const iconTile = 'hidden sm:flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-ink shadow-sm ring-1 ring-slate-200/70';
 
 // one timeline entry per role, newest first
@@ -56,7 +56,7 @@ function Experience() {
                             viewport={{ once: true, margin: '-60px' }}
                             transition={{ duration: 0.5, ease: 'easeOut' }}
                         >
-                            <article className="rounded-3xl border border-white/80 bg-white/85 p-6 shadow-sm shadow-slate-900/5 backdrop-blur sm:p-8">
+                            <article className="rounded-3xl border border-slate-200/70 bg-white p-6 shadow-sm shadow-slate-900/5 sm:p-8">
                                 {role.focus ? (
                                     <>
                                         <header className="flex flex-wrap items-start justify-between gap-4">

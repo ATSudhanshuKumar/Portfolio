@@ -9,7 +9,7 @@ function Projects() {
                 {projects.map((p) => (
                     <article
                         key={p.title}
-                        className="group flex flex-col rounded-xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg"
+                        className="group flex flex-col rounded-3xl border border-slate-200/70 bg-white p-6 shadow-sm shadow-slate-900/5 transition hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg"
                     >
                         <div className="flex items-start justify-between">
                             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-100 text-brand-700">

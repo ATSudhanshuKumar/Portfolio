@@ -46,7 +46,7 @@ function HeroVisual() {
                     x: { delay: 0.9, duration: 0.5, ease: 'easeOut' },
                     y: { delay: 1.4, duration: 4.5, repeat: Infinity, ease: 'easeInOut' },
                 }}
-                className="absolute -left-2 bottom-1 flex items-center gap-3 rounded-2xl border border-white/70 bg-white/95 px-4 py-3 shadow-xl shadow-slate-900/10 backdrop-blur"
+                className="absolute -left-2 bottom-1 flex items-center gap-3 rounded-2xl border border-slate-200/70 bg-white px-4 py-3 shadow-xl shadow-slate-900/10"
             >
                 <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-ink text-white">
                     <Code weight="bold" className="h-5 w-5" />
@@ -66,7 +66,7 @@ function HeroVisual() {
                     x: { delay: 1.1, duration: 0.5, ease: 'easeOut' },
                     y: { delay: 1.6, duration: 5, repeat: Infinity, ease: 'easeInOut' },
                 }}
-                className="absolute right-0 top-1 rounded-2xl border border-white/70 bg-white/95 px-4 py-3 text-center shadow-xl shadow-slate-900/10 backdrop-blur"
+                className="absolute right-0 top-1 rounded-2xl border border-slate-200/70 bg-white px-4 py-3 text-center shadow-xl shadow-slate-900/10"
             >
                 <span className="block font-display text-2xl font-extrabold text-ink">1+</span>
                 <span className="block text-xs font-medium text-slate-500">Years Experience</span>

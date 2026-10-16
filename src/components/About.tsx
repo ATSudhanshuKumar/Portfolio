@@ -60,7 +60,7 @@ function About() {
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.15 + i * 0.08, duration: 0.4 }}
                                     whileHover={{ y: -3 }}
-                                    className="flex items-center gap-3 rounded-xl border border-white/80 bg-white/70 px-4 py-3 shadow-sm shadow-slate-900/5 backdrop-blur"
+                                    className="flex items-center gap-3 rounded-xl border border-slate-200/70 bg-white px-4 py-3 shadow-sm shadow-slate-900/5"
                                 >
                                     <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-ink">
                                         <Icon weight="bold" className="h-5 w-5" />
